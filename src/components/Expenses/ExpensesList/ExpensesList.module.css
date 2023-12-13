@@ -1,0 +1,38 @@
+div.list-expenses {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+
+    @media (min-width:925px) {
+        & {
+            max-width: 700px;
+        }
+    }
+}
+
+input.inputs-expenses {
+    background-color: rgb(171, 171, 149);
+
+    @media (max-width:925px) {
+        &:first-child {
+            width: 200px;
+        }
+    }
+
+    @media (min-width:925px) {
+        &:first-child {
+            width: 400px;
+        }
+    }
+
+    &:last-of-type {
+        margin-left: auto;
+        width: 100px;
+        text-align: end;
+    }
+}
+
+input {
+    padding: 5px 7px;
+    margin: 3px 0px;
+}

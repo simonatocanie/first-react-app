@@ -1,7 +1,6 @@
 import ResultsTable from './ResultsTable/ResultsTable';
 import UserForm from './UserForm/UserForm'
 import Header from '../Header/Header'
-import styles from './Calculator.module.css'
 import { useState } from 'react';
 
 const Calculator = () => {
@@ -39,7 +38,7 @@ const Calculator = () => {
     <div>
       <Header />
       <UserForm onCalculate={calculateHandler} onResetValues={resetHandler} />
-      {!userInput && <p className={styles['text-center']}>No results calculated yet</p>}
+      {!userInput && <p className='text-center cover-full'>No results calculated yet</p>}
       {userInput && <ResultsTable yearlyData={yearlyData} initialInvestment={+userInput.currentSavings} />}
     </div>
   );

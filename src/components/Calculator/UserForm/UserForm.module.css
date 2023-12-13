@@ -1,34 +1,17 @@
 .form {
-    padding: 1rem;
-    width: 30rem;
-    margin: 2rem auto;
-    border-radius: 7px;
-    background: linear-gradient(180deg, #91565e, #a93e4c);
-    color: white;
-}
+  padding: 1rem;
+  width: 700px;
+  margin: 2rem auto;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #91565e, #a93e4c);
+  color: white;
+  
+  p{
+    display: relative;
+    min-width: 300px;
+  }
 
-@media (min-width:925px) {
-    .form {
-        width: 50%;
-    }
-}
-
-.input-group {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1.5rem;
-}
-
-.form label {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.form input {
+   & input {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #d89ff3;
@@ -36,43 +19,64 @@
     background-color: transparent;
     color: #d89ff3;
     font-size: 1rem;
-}
+  }
 
-.actions {
-    display: flex;
-    justify-content: center;
+  & label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }  
+
+  @media (max-width:925px) {
+    & {
+      width: 500px;
+    }
+  }
+
+  &.actions {
+    text-align: left;
     gap: 1rem;
   }
-  
-  .button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    background: linear-gradient(180deg, #654348, #52040f);
-    color: #c2e9e0;
-    font-family: 'Roboto Condensed', sans-serif;
-    cursor: pointer;
-  }
-  
-  .buttonAlt {
-    font-family: 'Roboto Condensed', sans-serif;
-    border: none;
-    background: transparent;
-    color: #c2e9e0;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: linear-gradient(180deg, #927276, #a93e4c);
-    color: black;
-  }
-  
-  .buttonAlt:hover {
-    background: transparent;
-    color: #52040f;
-  }
+}
 
-  p.text-danger{
-    color:rgb(37, 4, 4);
-    text-align: center;
-  }
+.input-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: #c2e9e0;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  background-color: #521c23;
+}
+
+.buttonAlt {
+  font-family: 'Roboto Condensed', sans-serif;
+  border: none;
+  background: transparent;
+  color: #c2e9e0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #927276, #a93e4c);
+  color: black;
+}
+
+.buttonAlt:hover {
+  background: transparent;
+  color: #52040f;
+}
+
+p.text-danger {
+  color: rgb(37, 4, 4);
+  text-align: center;
+}

@@ -17,6 +17,7 @@ const Navbar = () => {
         <ul>
             <li><Link className={checkActiveClass('home')} to='/' onClick={() => setActiveLink('home')}>Home</Link></li>
             <li><Link className={checkActiveClass('calculator')} to='/calculator' onClick={() => setActiveLink('calculator')}>Calculator</Link></li>
+            <li><Link className={checkActiveClass('expenses')} to='/expenses' onClick={() => setActiveLink('expenses')}>Expenses</Link></li>
         </ul>
     );
 }

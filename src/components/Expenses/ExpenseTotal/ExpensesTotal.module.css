@@ -1,0 +1,28 @@
+.div-content {
+    width: 42%;
+    background-color: red;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width:925px) {
+        width: 35%;
+    }
+}
+
+.div-sum {
+    float: right;
+    border-top: 1px solid black;
+    margin-top: 15px;
+
+    p {
+        position: fixed;
+        margin-top: 5px;
+        color: black;
+        font-weight: 900;
+    }
+}
+
+.div-sum,
+p {
+    width: 50px;
+}

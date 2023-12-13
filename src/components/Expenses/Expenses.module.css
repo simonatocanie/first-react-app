@@ -1,0 +1,37 @@
+div.div-block {
+    display: grid;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+button.button-add {
+    margin-left: 600px;
+    background: #0000ff;
+
+    @media (max-width:925px) {
+        & {
+            margin-left: 400px;
+        }
+    }
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: rgb(229, 229, 229);
+}
+
+.display-flex {
+    color: rgb(34, 34, 71);
+    margin-top: 15px;
+
+    p {
+        width: 50%;
+        float: right;
+        position: fixed;
+
+        @media (min-width:925px) {
+            width: 65%;
+        }
+    }
+}
