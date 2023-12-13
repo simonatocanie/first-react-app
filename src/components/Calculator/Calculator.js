@@ -38,7 +38,7 @@ const Calculator = () => {
     <div>
       <Header />
       <UserForm onCalculate={calculateHandler} onResetValues={resetHandler} />
-      {!userInput && <p className='text-center cover-full'>No results calculated yet</p>}
+      {!userInput && <p className='text-center row-full'>No results calculated yet</p>}
       {userInput && <ResultsTable yearlyData={yearlyData} initialInvestment={+userInput.currentSavings} />}
     </div>
   );

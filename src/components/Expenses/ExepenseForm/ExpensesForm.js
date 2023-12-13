@@ -72,7 +72,7 @@ const ExpenseForm = (props) => {
                             Submit
                         </Button>
                     </div>
-                    {props.isFound && <p className={`text-danger text-center ${styles['p-full-length']}`}>Please note that if the value is found in the list, the amount is updated.</p>}
+                    {props.isFound && <p className='text-danger text-center cover-full'>Please note that if the value is found in the list, the amount is updated.</p>}
                 </form>
             </Card>
         </>

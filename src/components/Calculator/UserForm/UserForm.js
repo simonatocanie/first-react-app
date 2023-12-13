@@ -77,7 +77,7 @@ const UserForm = (props) => {
             </p>
             {
                 isInvalid ?
-                    <p className='text-danger text-center cover-full'>
+                    <p className='text-danger text-center row-full'>
                         Please check your inputs, all info required
                     </p>
                     : ''
