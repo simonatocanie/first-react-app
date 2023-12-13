@@ -24,7 +24,7 @@ body {
   color: red;
 }
 
-.cover-full {
-  position: relative;
+.row-full {
   width: 100%;
+  position: relative;
 }
