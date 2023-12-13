@@ -1,0 +1,72 @@
+.button {
+    padding: 9px 25px;
+    margin-top: 20px;
+    border-radius: 3px;
+    min-width: 50px;
+
+    &:last-of-type {
+        margin-left: 10px;
+    }
+
+    &[type=submit] {
+        background: blue;
+        color: white;
+    }
+
+    &[type=submit]:hover {
+        background: linear-gradient(#1a1f1d, #0c003b);
+        color: white;
+    }
+
+    &[type=cancel] {
+        background: gray;
+    }
+
+    &[type=cancel]:hover {
+        background: linear-gradient(#575959, #1a1a1b);
+        color: white;
+    }
+
+    &.button-add {
+        margin-left: 565px;
+        background: #392f60;
+        color: white;
+
+        @media (max-width:925px) {
+            & {
+                margin-left: 400px;
+            }
+        }
+
+        &:hover {
+            background: linear-gradient(#211b37, #414040);
+        }
+    }
+}
+
+
+button {
+    cursor: pointer;
+
+    &.close-btn {
+        font-size: 30px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        color: black;
+        margin-left: 25px;
+    }
+
+    &.close-btn:hover {
+        background: transparent;
+        color: red;
+    }
+}
+
+
+.button:disabled,
+.button:disabled:hover {
+    cursor: not-allowed;
+    background: rgb(229, 229, 229);
+    color: #0c003b;
+}

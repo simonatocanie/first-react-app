@@ -42,7 +42,7 @@ const UserForm = (props) => {
 
     return (
         <form className={styles.form} onSubmit={submitHandler}>
-            <div className="input-group">
+            <div className={styles['input-group']}>
                 <p>
                     <label htmlFor="current-savings">Current Savings ($)</label>
                     <input type="number" id="current-savings" value={uservalues.currentSavings}
@@ -77,7 +77,9 @@ const UserForm = (props) => {
             </p>
             {
                 isInvalid ?
-                    <p className={styles['text-danger']}>Please check your inputs, all info required</p>
+                    <p className='text-danger text-center cover-full'>
+                        Please check your inputs, all info required
+                    </p>
                     : ''
             }
         </form>
